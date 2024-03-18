@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 body{
   background-color: #F5F5F1;
+}
+
+header p.team-description{
+  font-size: 14px;
+  font-style: italic;
+  color: #67615A;
+}
+
+.row h5{
+  font-family: "Bodoni Moda", serif;
+  color: #67615A;
+}
+
+.row h6{
+  font-family: "Bellota Text", sans-serif;
+  color: #67615A;
 }

@@ -80,7 +80,7 @@ for(let i=0;i<team.length;i++){
             <div class="card-body text-center">
               <h5 class="card-title name_title">${team[i]["name"]}</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary role_title">${team[i]["role"]}</h6>
-              <p class="card-text member_description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <!--<p class="card-text member_description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
             </div>
           </div>
         </div>
