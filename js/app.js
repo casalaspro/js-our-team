@@ -29,7 +29,7 @@ Buon lavoro!
 */
 
 const team = [];
-const containerElement = document.querySelector(".container");
+const containerElement = document.querySelector(".row");
 console.dir(containerElement);
 // const imgElement = document.querySelector(".picture");
 // console.dir(imgElement);
@@ -57,20 +57,34 @@ console.log(team);
 
 for(let i=0;i<team.length;i++){
   // console.log(team[i]);
-  const photoElement = document.createElement("img");
-  photoElement.classList.add("picture");
-  photoElement.src = "./img/" + team[i]["picture"];
-  containerElement.appendChild(photoElement);
+  // const photoElement = document.createElement("img");
+  // photoElement.classList.add("picture");
+  // photoElement.src = "./img/" + team[i]["picture"];
+  // containerElement.appendChild(photoElement);
 
-  const nameElement = document.createElement("p");
-  const nameText = document.createTextNode(team[i].name);
-  nameElement.appendChild(nameText);
-  containerElement.appendChild(nameElement);
+  // const nameElement = document.createElement("p");
+  // const nameText = document.createTextNode(team[i].name);
+  // nameElement.appendChild(nameText);
+  // containerElement.appendChild(nameElement);
 
-  const roleElement = document.createElement("p");
-  const roleText = document.createTextNode(team[i].role);
-  roleElement.appendChild(roleText);
-  containerElement.appendChild(roleElement);
+  // const roleElement = document.createElement("p");
+  // const roleText = document.createTextNode(team[i].role);
+  // roleElement.appendChild(roleText);
+  // containerElement.appendChild(roleElement);
+
+  const photoLink = "./img/"
+  containerElement.innerHTML += `
+  <div class="col-4">
+          <div class="card rounded-0 border-0">
+            <img src=${photoLink + team[i]["picture"]} class="card-img-top rounded-0" alt="angela caroll">
+            <div class="card-body text-center">
+              <h5 class="card-title name_title">${team[i]["name"]}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary role_title">${team[i]["role"]}</h6>
+              <p class="card-text member_description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+  `
 
 
   for(let key in team[i]){
