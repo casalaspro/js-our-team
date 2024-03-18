@@ -31,8 +31,6 @@ Buon lavoro!
 const team = [];
 const containerElement = document.querySelector(".row");
 console.dir(containerElement);
-// const imgElement = document.querySelector(".picture");
-// console.dir(imgElement);
 
 function generateMember(memberName, memberRole, memberPicture){
   const member = {
